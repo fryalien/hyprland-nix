@@ -4,9 +4,9 @@
 
   #imports =
   #  [
-      #./app/browser/librewolf.nix
-      #./app/browser/chromium.nix
-      #./app/browser/brave.nix
+      #./dots/browser/librewolf.nix
+      #./dots/browser/chromium.nix
+      #./dots/browser/brave.nix
   #  ];
 
   # Home Manager data.
@@ -19,10 +19,7 @@
   # Home Manager dotfiles.
   home.file = {
     ".config/fish".source = ./system/fish;
-    ".local/share/konsole".source = ./apps/konsole;
-    ".config/alacritty".source = ./apps/alacritty;
-    ".config/kitty".source = ./apps/kitty;
-    #".config/hypr".source = ./hyprland/hypr;
+    ".config/kitty".source = ./dotss/kitty;
   };
 
   # Home Manager can also manage your environment variables.
